@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Logo -->
+    <link href="./css/img/logoCortada.png">
+
+    <title>BarberShop</title>
+</head>
+<body>
+    <!-- Landing Page -->
+
+    <!-- Barra de Navegação -->
+    <section id="landingPage">
+        <nav id="navBar">
+            <img id="logo" src="./css/img/logoCortada.png" alt="logo da Barbearia">
+            <ul>
+                <li><a href="#openMessage">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#ourServices">Serviços</a></li>
+                <li><a href="#carrossel">Galeria</a></li>
+                <li><a href="#foter">Contato</a></li>
+            </ul>
+
+            <div id="icons">
+                <a href="https://web.facebook.com/brunobarber2016/photos" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/barbeariabrunoalmeida/tagged/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+
+    <!-- Início da Landing PAge -->
+        <div id="openMessage">
+            <div id="openMessageContainer">
+                <h1>Deixar você <span style="color: #daa554;">bonito</span> é o nosso trabalho</h1>
+                <p>Faça sempre o corte perfeito dos seus sonhos na barbearia que se importa com seu estilo!</p>
+                <a target="_blank" href="https://api.whatsapp.com/message/RHTPMLVMFQA5J1?autoload=1&app_absent=0"><i style="padding-right: 1vw;" class="fa-brands fa-whatsapp"></i>Agende pelo WhatsApp</a>
+            </div>
+        </div>
+        <div id="imgLanding">
+            <img src="./css/img/oficialBackground.jpeg" alt="">
+        </div>
+        <div id="commentCard">
+            <h3>Review</h3>
+            <div id="commentCardContainer">
+                <img src="./css/img/perfilImg.jpg" alt="foto de perfil de um cliente">
+                <p>Adilson Fideles<br><small>2 meses atrás</small></p>           
+            </div>
+            <p>muito obrigado pelo atendimento, barba e sobrancelha top... você é fera! 👏</p>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="about">
+        <video controls id="vid">
+            <source src="./css/img/vid-barbeiroNoSound.mp4" type="video/mp4">
+        </video>
+        <div id="aboutContainer">
+            <h1>Sobre Nós</h1>
+            <p>
+                Nosso objetivo é oferece um atendimento personalizado e de qualidade, com uma variedade de cortes de cabelo, bigode, barba, pintura e sobrancelhas. Para homens e mulheres. Nosso barbeiro é experiente e qualificado, é conversativo e oferece um ambiente descontraído e agradável. Venha conhecer e experimente a diferença!</p>
+        </div>
+    </section> 
+
+     <!-- Transforme seu visual -->
+     <section id="visu">
+         <div id="visuContainer">
+             <h1>Transforme seu visual!</h1>
+             <p>O corte de cabelo é uma parte importante da identidade de uma pessoa. O corte diz muito sobre você, sua personalidade e estilo.
+ 
+                 A Barbearia Bruno Almeida oferece uma variedade de cortes de cabelo masculino e feminino, para todos os gostos. Os barbeiros da barbearia são experientes e qualificados para ajudar os clientes a encontrar o corte perfeito.</p>
+         </div>
+            <img id="imgVisu" src="./css/img/perfil.jpg" alt="Foto de perfil do barbeiro">
+     </section>
+
+     <!-- Como escolher seu corte de cabelo -->
+     <main>
+        <section id="ourServices">
+            <h1>Nossos serviços</h1>
+            <p>Ao escolher um corte de cabelo, é importante considerar o seu tipo de cabelo, estilo pessoal e preferências. Também é importante conversar com o barbeiro para obter conselhos personalizados.</p>
+            <div id="ourServicesContainer">
+                <div class="card">
+                    <img src="./css/img/hairCut.jpg" alt="um rapaz com um belo corte de cabelo">
+                    <img class="barberTools" src="./css/img/comb" alt="máquina de cortar cabelo">
+                    <p>Corte de Cabelo <br><span style="color: #daa554;">R$ 35</span></p>
+                </div>
+                <div class="card">
+                    <img src="./css/img/corte3_resized.jpg" alt="um rapaz com um belo corte de cabelo">
+                    <img class="barberTools" src="./css/img/dyeBrush" alt="máquina de cortar cabelo">
+                    <p>Pintura <br><span style="color: #daa554;">R$ 35</span></p>
+                </div>
+                <div class="card">
+                    <img src="./css/img/beard.png" alt="um rapaz com um belo corte de cabelo">
+                    <img class="barberTools" src="./css/img/hairClipper.png" alt="máquina de cortar cabelo">
+                    <p>Barba <br><span style="color: #daa554;">R$ 35</span></p>
+                </div>
+                <div class="card">
+                    <img src="./css/img/style.jpg" alt="um rapaz com um belo corte de cabelo">
+                    <img class="barberTools" style="bottom: 12.5vh;" src="./css/img/razor" alt="máquina de cortar cabelo">
+                    <p>free style <br><span style="color: #daa554;">R$ 35</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catálogo de imagens -->
+        <section class="carousel" id="carrossel">
+            <h1>Catálogo de Cortes</h1>
+            <div class="container">
+                <button class="arrow-left control" aria-label="Previous Image"><i class="fa-solid fa-arrow-left-long"></i></button>
+                <button class="arrow-right control" aria-label="Next Image"><i class="fa-solid fa-arrow-right-long"></i></button>
+                <div class="gallery-wrapper">
+                    <div class="gallery" id="gallery">
+                        <img src="./css/img/carouselImgs/hairCut1.jpg" alt="Corte de cabelo 1" class="item current-item">
+                        <img src="./css/img/carouselImgs/hairCut2.jpg" alt="Corte de cabelo 2" class="item">
+                        <img src="./css/img/carouselImgs/hairCut3.jpg" alt="Corte de cabelo 3" class="item">
+                        <img src="./css/img/carouselImgs/hairCut4.jpg" alt="Corte de cabelo 4" class="item">
+                        <img src="./css/img/carouselImgs/hairCut5.jpg" alt="Corte de cabelo 5" class="item">
+                        <img src="./css/img/carouselImgs/hairCut6.jpg" alt="Corte de cabelo 6" class="item">
+                        <img src="./css/img/carouselImgs/hairCut7.jpg" alt="Corte de cabelo 7" class="item">
+                        <img src="./css/img/carouselImgs/hairCut8.jpg" alt="Corte de cabelo 8" class="item">
+                        <img src="./css/img/carouselImgs/hairCut9.jpg" alt="Corte de cabelo 9" class="item">
+                        <img src="./css/img/carouselImgs/hairCut10.png" alt="Corte de cabelo 10" class="item">
+                        <img src="./css/img/carouselImgs/hairCut11.jpg" alt="Corte de cabelo 11" class="item">
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
+     <section id="local">
+        <h1>Localização</h1>
+        <div id="maps">
+            <p>Rua Teófilo Ottoní, 35 - Jardim Oliveiras, Taboão da Serra - SP, 06765-307</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.4471725222716!2d-46.77894112541935!3d-23.62415156390061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce546f8fb0a4bf%3A0x35bd0be703206d54!2sRua%20Te%C3%B3filo%20Otton%C3%AD%2C%2035%20-%20Jardim%20Oliveiras%2C%20Tabo%C3%A3o%20da%20Serra%20-%20SP%2C%2006765-307!5e0!3m2!1spt-BR!2sbr!4v1700528803053!5m2!1spt-BR!2sbr" style="border:0; width: 50vw; height: 50vh;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+     </section>
+
+     <!-- Horários da barbearia -->
+     <section id="schedules">
+        <div id="imgWork">
+            <img src="./css/img/workTime.png" alt="uma moudura personalizada com uma foto do barbeiro com seu cliente">
+        </div>
+        <div id="cardContainer">
+            <div id="scheduleCard">
+                <h1>Horários</h1>
+                <p>Nosso horário de trabalho é flexível e conveniente, começando de manhã e terminando à noite</p>
+                <div id="schedule">
+                    <div>
+                        <h3>Dias úteis</h3>
+                        <h3>9:00 - 21:00</h3>
+                    </div>
+                    <hr style="font-weight: lighter;">
+                    <div>
+                        <h3>Sábado</h3>
+                        <h3>10:00 - 19:00</h3>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3>Domingo</h3>
+                        <h3>Fechado</h3>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Formulário de mesagem/agendamento -->
+     <section id="scheduling">
+        <h1>Entre em contato</h1>
+        <form action="" id="schedulingForm">
+            <div id="schedulingContainer">
+                <input type="text" name="firstName" id="firstName" placeholder="Nome">
+                <input type="text" name="lastName" id="lastName" placeholder="Sobrenome">
+                <input type="email" name="Email" id="email" placeholder="Email">
+                <input type="tel" name="Telephone" id="tel" placeholder="Telefone" required>
+            </div>
+            <textarea name="send" id="send" cols="30" rows="10" placeholder="Mensagem"></textarea>
+
+            <button type="submit" id="btnSubmit">Enviar</button>
+        </form>
+     </section>
+
+     <!-- Rodapé -->
+     <footer id="foter">
+        <div id="footerBarber">
+            <div id="footerBarberText">
+                <img src="./css/img/barberTools.png" alt="uma tesoura e um pente">
+                <h2>  Bruno Almeida</h2>
+            </div>
+            <p>A barbearia Bruno Almeida é uma equipe de profissionais apaixonados e experientes que se dedicam a fornecer penteados da mais alta qualidade</p>
+            <div id="socialMedia">
+                <a  href="https://web.facebook.com/brunobarber2016/photos" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/barbeariabrunoalmeida/tagged/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div id="contacts">
+            <h2>Contatos</h2>
+            <p><i class="fa-solid fa-phone"></i> +55 (11) 94801-0855</p>
+            <p><i class="fa-solid fa-location-dot"></i> Rua Teófilo Ottoní, 35 - Jardim Oliveiras</p>
+        </div>
+    </footer>
+    <div id="copyRight">
+        <p>Copyright © 2023 <span style="color: #daa554;">Barbearia Bruno Almeida</span></p>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+    <!-- Biblioteca de Icones -->
+    <script src="https://kit.fontawesome.com/8b450a9b91.js" crossorigin="anonymous"></script>
+</body>
+</html>
