@@ -607,6 +607,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    gap: 10vw;
     box-sizing: border-box;
     padding: 3vh 10vw;
 }
