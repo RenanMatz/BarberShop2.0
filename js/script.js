@@ -45,14 +45,25 @@ controls.forEach(control => {
 });
 
 
-// Modo Claro
-const btnLight = document.getElementById("btnLight");
-const target = document.querySelectorAll("[data-white='true']");
+// NAVBAR RESPONSIVA
+const btnMenu = document.getElementById("menu");
+const menu = document.getElementById("navBarMenu")
+const btnClose = document.getElementById("btnClose")
 
-function lightMode(){
-    btnLight.addEventListener("click", () => {
-        target.style.backgroundColor = "white";
-    });
+// função abrir menu
+function openMenu(){
+    btnMenu.addEventListener("click", () => {
+        menu.style.right = "0"
+    })
 }
 
-document.addEventListener("DOMContentLoaded", lightMode())
+document.addEventListener("DOMContentLoaded", openMenu())
+
+// função fechar menu no botão
+function closeMenu(){
+    menu.addEventListener("click", () => {
+        menu.style.right = "-70%"
+    })
+}
+
+document.addEventListener("DOMContentLoaded", closeMenu())
