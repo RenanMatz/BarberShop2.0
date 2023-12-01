@@ -1,0 +1,225 @@
+/* Barra de navegação */
+#navBar ul, #navBar #icons{
+    display: none;
+}
+
+#navBar img{
+    width: 4rem;
+}
+
+
+/* Landing Page */
+#openMessage{
+    width: 100%;
+    padding: 2vw;
+}
+
+#openMessageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0;
+}
+
+#openMessageContainer h1{
+    font-size: 2rem;
+}
+
+#openMessageContainer p{
+    text-align: center;
+    max-width: 97%;
+}
+
+#imgLanding, #commentCard{
+    display: none;
+}
+
+
+/* Sobre Nós */
+#about{
+    height: 85vh;
+    flex-direction: column-reverse;
+    gap: 3vh;
+    padding: 10px 0;
+}
+
+#about video{
+    width: 10rem;
+}
+
+#about #aboutContainer{
+    width: 100%;
+    height: 40vh;
+    box-sizing: border-box;
+    padding: 5px 15px; 
+}
+
+#about #aboutContainer h1, #ourServices h1, #scheduling h1{
+    font-size: 2.6rem;
+}
+
+/* Transforme seu visual */
+#visu{
+    flex-direction: column;
+}
+
+#visuContainer{
+    width: 100%;
+    height: 55%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#visuContainer h1{
+    font-size: 1.975rem;
+}
+
+#imgVisu{
+    width: 55%;
+}
+
+
+/* Nossos serviços */
+/* o título está recebendo a estilização lá em cima, com o #about #aboutContainer */
+
+#ourServices{
+    padding: 0 15px;
+    box-sizing: border-box;
+    height: 115vh;
+}
+
+#ourServices p{
+    /* background-color: olivedrab; */
+    max-width: 100%;
+    text-align: justify;
+}
+
+#ourServicesContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.card{
+    width: 43vw;
+    height: 33vh;
+}
+
+.card img{
+    width: 38vw;
+}
+
+.card .barberTools{
+    width: 14vw;
+    top: 46%;
+}
+
+#ourServices .card p{
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* Catálogo de cortes */
+.carousel{
+    padding: 0;
+    height: 55vh;
+}
+
+.carousel h1{
+    font-size: 2.5rem;
+}
+
+.arrow-left, .arrow-right{
+    top: 40%;
+}
+
+.item{
+    height: 60vw;
+}
+
+
+/* localização */
+#local{
+    height: 80vh;
+}
+
+#maps{
+    width: 85vw;
+    height: 75%;
+}
+
+#maps p{
+    text-align: center;
+    font-size: 17px;
+}
+
+#ifram{
+   width: 84vw;
+   height: 44vh;
+}
+
+
+/* Horários */
+#imgWork{
+    display: none;
+}
+
+#cardContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scheduleCard{
+    width: 70%;
+    margin: 0;
+}
+
+
+/* Entre em contato */
+#scheduling{
+    box-sizing: border-box;
+}
+
+/* h1 lá em cima tambem */
+
+#schedulingForm{
+    width: 90%;
+    box-sizing: border-box;
+}
+
+#schedulingForm textarea{
+    width: 90%;
+}
+
+#schedulingContainer{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* rodapé */
+#foter{
+    padding: 5vh 3vw;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+    place-items: start;
+}
+
+#footerBarber{
+    gap: 10px;
+}
+
+#footerBarber h2, #contacts h2{
+    font-size: 1.20rem;
+}
+
+#footerBarber p{
+    font-size: 14px;
+}
+
+#contacts{
+    align-items: center;
+}
