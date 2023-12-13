@@ -93,9 +93,14 @@
     padding: 5px 15px; 
 }
 
+#about #aboutContainer p{
+    font-size: 17px;
+}
+
 #about #aboutContainer h1, #ourServices h1, #scheduling h1{
     font-size: 2.6rem;
 }
+
 
 /* Transforme seu visual */
 #visu{
@@ -111,6 +116,10 @@
 
 #visuContainer h1{
     font-size: 1.975rem;
+}
+
+#visuContainer p{
+    font-size: 17px;
 }
 
 #imgVisu{
@@ -129,6 +138,7 @@
 
 #ourServices p{
     /* background-color: olivedrab; */
+    font-size: 17px;
     max-width: 100%;
     text-align: justify;
 }
@@ -148,14 +158,20 @@
     width: 38vw;
 }
 
-.card .barberTools{
+#ourServicesContainer .card .barberTools{
     width: 14vw;
-    top: 46%;
+    margin: -33px 0 -10px 0;
+}
+
+#ourServicesContainer .card #barberToolD{
+    width: 14vw;
+    margin: -27px 0 -10px 0;
 }
 
 #ourServices .card p{
     margin-bottom: 0.5rem;
     text-align: center;
+    font-size: 17px;
 }
 
 /* Catálogo de cortes */
@@ -218,33 +234,29 @@
 
 /* Entre em contato */
 #scheduling{
-    box-sizing: border-box;
+    height: 30vh;
+}
+
+#scheduling h1{
+   padding: 0 5%;
+   font-size: 1.7rem;
 }
 
 /* h1 lá em cima tambem */
 
-#schedulingForm{
-    width: 90%;
-    box-sizing: border-box;
-}
-
-#schedulingForm textarea{
-    width: 90%;
-}
-
-#schedulingContainer{
-    width: 100%;
-    box-sizing: border-box;
+/* Mensagem */
+#careMessage h1{
+    font-size: 1.7rem;
 }
 
 
 /* rodapé */
 #foter{
-    padding: 5vh 3vw;
-    grid-template-columns: 1fr 1fr;
-    gap: 3vw;
-    place-items: start;
-    height: 42vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1px;
+    padding: 10px 10px;
+    height: 45vh;
 }
 
 #footerBarber{
@@ -260,5 +272,6 @@
 }
 
 #contacts{
-    align-items: center;
+    padding: 30px 10px;
+    width: 100%;
 }
