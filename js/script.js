@@ -49,6 +49,7 @@ controls.forEach(control => {
 const btnMenu = document.getElementById("menu");
 const menu = document.getElementById("navBarMenu")
 const btnClose = document.getElementById("btnClose")
+const links = document.querySelectorAll(".links") // todos os links do menu
 
 // função abrir menu
 function openMenu(){
@@ -57,13 +58,23 @@ function openMenu(){
     })
 }
 
-document.addEventListener("DOMContentLoaded", openMenu())
+document.addEventListener("DOMContentLoaded", openMenu()) // chama a func de abrir o menu
 
 // função fechar menu no botão
 function closeMenu(){
-    menu.addEventListener("click", () => {
+    btnClose.addEventListener("click", () => {
         menu.style.right = "-70%"
     })
 }
 
-document.addEventListener("DOMContentLoaded", closeMenu())
+document.addEventListener("DOMContentLoaded", closeMenu()) // chama a func de fechar o menu
+
+function closeOnLinks(){
+    for(link of links){
+        link.addEventListener("click", () => {
+            menu.style.right = "-70%"
+        })
+    }
+}
+
+document.addEventListener("DOMContentLoaded", closeOnLinks()) // chama a func de fechar o menu ao clicar em algun link
