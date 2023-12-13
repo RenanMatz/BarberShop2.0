@@ -8,9 +8,9 @@
     <!-- Link Mobile CSS -->
     <link rel="stylesheet" media="screen and (max-width: 740px)" href="./css/mobile.css">
     <!-- Logo -->
-    <link href="./css/img/logoCortada.png">
+    <link rel="logo icon" href="./css/img/logoCortada.png">
 
-    <title>BarberShop</title>
+    <title>Bruno Barbearia</title>
 </head>
 <body>
     <!-- Landing Page -->
@@ -23,16 +23,16 @@
             <div id="navBarMenu">
                 <button id="btnClose"><i class="fa-solid fa-xmark"></i></button>
                 <ul>
-                    <li><a href="#openMessage">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#ourServices">Serviços</a></li>
-                    <li><a href="#carrossel">Galeria</a></li>
-                    <li><a href="#foter">Contato</a></li>
+                    <li><a href="#openMessage" class="links">Início</a></li>
+                    <li><a href="#about" class="links">Sobre</a></li>
+                    <li><a href="#ourServices" class="links">Serviços</a></li>
+                    <li><a href="#carrossel" class="links">Galeria</a></li>
+                    <li><a href="#copyRight" class="links">Contato</a></li>
                 </ul>
                 
                 <div id="icons">
-                    <a href="https://web.facebook.com/brunobarber2016/photos" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/barbeariabrunoalmeida/tagged/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://web.facebook.com/brunobarber2016/photos" target="_blank"><i class="fa-brands fa-facebook links"></i></a>
+                    <a href="https://www.instagram.com/barbeariabrunoalmeida/tagged/" target="_blank"><i class="fa-brands fa-instagram links"></i></a>
                 </div>
             </div>
         </nav>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="card">
                     <img src="./css/img/style.jpg" alt="um rapaz com um belo corte de cabelo">
-                    <img class="barberTools" style="top: 49%;" src="./css/img/razor" alt="máquina de cortar cabelo">
+                    <img class="barberTools" id="barberToolD" 0 0 0;" src="./css/img/razor" alt="máquina de cortar cabelo">
                     <p>free style <br><span style="color: #daa554;">R$ 15</span></p>
                 </div>
             </div>
@@ -172,20 +172,9 @@
         </div>
     </section>
 
-    <!-- Formulário de mesagem/agendamento -->
-    <section id="scheduling">
-        <h1>Entre em contato</h1>
-        <form action="" id="schedulingForm">
-            <div id="schedulingContainer">
-                <input type="text" name="firstName" id="firstName" placeholder="Nome">
-                <input type="text" name="lastName" id="lastName" placeholder="Sobrenome">
-                <input type="email" name="Email" id="email" placeholder="Email">
-                <input type="tel" name="Telephone" id="tel" placeholder="Telefone" required>
-            </div>
-            <textarea name="send" id="send" cols="30" rows="10" placeholder="Mensagem"></textarea>
-
-            <button type="submit" id="btnSubmit">Enviar</button>
-        </form>
+    <!-- Mensagem -->
+    <section id="careMessage">
+        <h1>Agende com a barbearia que se <span style="color: #daa554;">importa</span> com você!</h1>
     </section>
 
     <!-- Rodapé -->
