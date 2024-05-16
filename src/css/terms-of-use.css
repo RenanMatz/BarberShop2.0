@@ -1,0 +1,59 @@
+/* Fonte Abril Fatface */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Fonte poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset nos estilos padrões */
+*{
+    padding: 0px;
+    box-sizing: 0px;
+    margin: 0%;
+}
+
+body{
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, p{
+    color: snow;
+}
+
+h1{
+    font-family: "Abril Fatface", serif;
+    font-weight: lighter;
+    color: #daa554;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* color: #daa554; */
+}
+
+p{
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+}
+
+/* documento principal */
+.doc-container{
+    width: 80vw;
+    height: auto;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3vh 5vw;
+    gap: 6vh;
+}
+
+.doc-container div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
