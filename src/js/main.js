@@ -7,5 +7,5 @@ import { toggleMenu } from "./exports/load-porfile.js";
 mobileOperation();
 carouselOperation();
 formsValidation();
-// loadProfile();
+loadProfile();
 toggleMenu();

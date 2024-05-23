@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link css -->
+    <link rel="stylesheet" href="../css/user-profile.css">
+    <!-- Logo -->
+    <link rel="logo icon" href="../img/logoCortada.png">
+    <!-- Título -->
+    <title>Perfil de usuário</title>
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <header class="header">
+        <a href="./index.html">
+            <img src="../img/logoCortada.png" alt="Logo" id="our-logo">
+        </a>
+        <h1>Perfil</h1>
+    </header>
+    <main class="user-info">
+        <div class="user-pic-container">
+            <img src="../img/carouselImgs/hairCut11.jpg" alt="Foto de perfil">
+            <form method="POST" action="">
+                <label for="change-image">Selecionar um arquivo</label>
+                <input type="file" id="change-image">
+            </form>
+        </div>
+        <div class="user-name-container">
+            <h1>Daniel Rocha</h1>
+            <div>
+                <p>Dani_Rocha</p>
+                <p>Cliente regular 👊</p>
+            </div>
+        </div>
+    </main>
+    <section class="personal-data-container">
+        <div class="personal-info">
+            <h1>Dados pessoais</h1>
+            <form class="personal-data">
+                <div class="input-line">
+                    <label for="full-name" class="input-description" id="full-name-label">Nome completo</label>
+                    <input type="text" value="Daniel Rocha de Souza" id="full-name" maxlength="100">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="input-line">
+                    <label for="user-name" class="input-description" id="user-name-label">Nome de usuário</label>
+                    <input type="text" value="Dani_Rocha" id="user-name" maxlength="50">
+                    <i class="fa-solid fa-xmark" id="second-delete-button"></i>
+                </div>
+                <div class="input-line">
+                    <label for="phone-number" class="input-description">Telefone</label>
+                    <input type="text" value="11971532491" id="phone-number" disabled>
+                </div>
+                <div class="buttons-container">
+                    <a href="./recover-password/redefine-password.html"><i class="fa-solid fa-lock"></i>  Alterar senha</a>
+                    <button class="save-changes">Salvar alterações</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="account-details-container">
+        <div class="account-details">
+            <h1>Detalhes da Conta</h1>
+            <div>
+                <p>Agendamentos realizados: <span>8</span></p>
+                <p>Barbeiro que mais me atendeu: <span>Bruno Almeida</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biblioteca de Icones -->
+    <script src="https://kit.fontawesome.com/8b450a9b91.js" crossorigin="anonymous"></script>
+    <!-- Script -->
+    <script src="../js/user-profile.js"></script>
+</body>
+</html>

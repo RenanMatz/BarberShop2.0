@@ -1,0 +1,263 @@
+/* Estilo de fonte  */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+/* Fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset de Estilos */
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    border: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #151515;
+    color: #fff;
+}
+
+
+/* Cabeçalho */
+.header{
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    padding-left: 6vw;
+}
+
+.header h1{
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+}
+
+#our-logo{
+    width: 6vw;
+}
+
+
+/* Informações do usuário */
+.user-info{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 8vw;
+    padding: 15px 20vw 15px 0px;
+    background-color: #1f1f1f;
+}
+
+.user-info .user-pic-container{
+    width: 17vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transform: translateY(25vh);
+}
+
+.user-info .user-pic-container img{
+    width: 15vw;
+    height: 201.59px;
+    border-radius: 15px;
+}
+
+.user-info .user-pic-container input{
+    display: none;
+}
+
+.user-info .user-pic-container label{
+    font-family: "Poppins", sans-serif;
+    background-color: #daa554;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #151515;
+}
+
+.user-info .user-name-container h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+}
+
+.user-info .user-name-container div{
+    display: flex;
+    gap: 10px;
+}
+
+.user-info .user-name-container p{
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Dados pessoais */
+.personal-data-container{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: end;
+}
+
+.personal-info{
+    width: 67%;
+    height: 100%;
+    padding: 30px 15px;
+}
+
+.personal-info h1{
+    font-family: "Poppins", sans-serif;
+}
+
+.personal-data{
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.input-line{
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+
+.input-line .input-description{
+    color: #daa554;
+    font-size: 0.7rem;
+    background-color: #151515;
+    padding: 0px 1px;
+    position: absolute;
+    top: 2px;
+    left: 13px;
+    transition: ease-in-out 0.3s;
+}
+
+.toggle-label{
+    transition: ease-in-out 0.3s;
+    position: absolute;
+    background-color: transparent;
+    font-size: 1rem;
+    top: 19px;
+    color: #ccc;
+    left: 15px;
+}
+
+.input-line input{
+    width: 30vw;
+    height: 7vh;
+    outline: none;
+    border: 1px solid #e9eaec;
+    color: #fff;
+    padding: 0px 30px 0px 10px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+}
+
+.input-line input:focus{
+    border: 1px solid #daa554;
+}
+
+#phone-number{
+    user-select: none;
+    cursor: no-drop;
+    color: #ccc;
+}
+
+.input-line i{
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    right: 45px;
+    cursor: pointer;
+}
+
+.buttons-container{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 15px;
+}
+
+.buttons-container a{
+    background-color: #272727;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-size: 0.85rem;
+    transition: 0.5s;
+}
+
+.buttons-container a:hover{
+    background-color: #666;
+    color: #151515;
+}
+
+.buttons-container a i{
+    font-size: 0.9rem;
+}
+
+.buttons-container .save-changes{
+    background-color: #dd8d16;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: ease-in-out 0.3s;
+}
+
+.buttons-container .save-changes:hover{
+    background-color: #daa554;
+    color: #666;
+}
+
+
+/* Detalhes da conta */
+.account-details-container{
+    width: 100%;
+    height: 30vh;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 20px 3vw;
+}
+
+.account-details-container .account-details{
+    width: 67%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.account-details-container .account-details div{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.account-details-container .account-details div span{
+    color: #daa554;
+}

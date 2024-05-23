@@ -13,37 +13,39 @@
 <body>
 
     <!-- Logo -->
-    <header>
+    <header class="header">
         <a href="../html/index.html">
             <img src="../img/logoCortada.png" alt="nossa logo">
         </a>
     </header>
     
-    <!-- Card/iput para realizar o login -->
-    <div id="login-container">
-        <form id="infos">
-            <h2>Login do Cliente</h2>
-            <div id="input-container">
-                <div class="line">
-                    <label for="user-name">Nome de usário</label>
-                    <input type="text" required name="user-name" placeholder="Digite seu nome de usuário">
-                </div>
-                <div class="line">
-                    <label for="password-input">Senha</label>
-                    <input type="password" required name="password" placeholder="Digite sua senha" id="password-input">
-                    <i class="fa-solid fa-eye-slash" id="i" style="color: #151515;"></i>
-                    <div id="account-information-container">
-                        <div id="keep-connected-container">
-                            <input type="checkbox" name="keep-connected" id="keep-connected" checked>
-                            <label for="keep-connected">Manter-me conectado?</label>
+    <!-- Card para realizar o login -->
+    <main class="login-container">
+        <div class="external-card">
+            <div class="login-card">
+                <h2>Login do Cliente</h2>
+                <form class="login-form">
+                    <div class="input-line">
+                        <label for="user-name" class="login-label-empty" id="user-name-label">Nome de usuário</label>
+                        <input type="text" id="user-name" class="login-input">
+                    </div>
+                    <div class="input-line">
+                        <label for="password" class="login-label-empty" id="password-label">Senha</label>
+                        <input type="password" id="password" class="login-input">
+                        <i class="fa-solid fa-eye-slash"></i>                    
+                    </div>
+                    <div class="checkbox-container">
+                        <div>
+                            <input type="checkbox" id="checkbox" checked>
+                            <label for="checkbox">Manter conectado</label>
                         </div>
                         <a href="./recover-password/recover-password.html">Esqueceu a senha?</a>
                     </div>
-                </div>
+                    <button>Logar</button>
+                </form>
             </div>
-            <button>Logar</button>
-        </form>
-    </div>
+        </div>
+    </main>
 
     <!-- Biblioteca de Icones -->
     <script src="https://kit.fontawesome.com/8b450a9b91.js" crossorigin="anonymous"></script>

@@ -12,12 +12,12 @@ export function loadProfile(){
         </div>
         <hr>
 
-        <a href="#" class="sub-menu-link">
+        <a href="./user-profile.html" class="sub-menu-link">
             <img src="../img/profile.png" alt="ícone de perfil">
             <p>Editar Perfil</p>
             <span>></span>
         </a>
-        <a href="#" class="sub-menu-link">
+        <a href="./terms-of-use.html" class="sub-menu-link">
             <img src="../img/help.png" alt="ícone de ajuda dos sites (help)">
             <p>Ajuda</p>
             <span>></span>
@@ -30,7 +30,6 @@ export function loadProfile(){
         </div>
     </div>
     `
-
     profileBallonContainer.innerHTML = subMenuStructure;
 }
 
