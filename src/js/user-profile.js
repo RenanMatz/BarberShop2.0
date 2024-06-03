@@ -32,7 +32,7 @@ function toggleLabel(){
         fullNameLabel.classList.add('toggle-label')
     })
 
-    fullnameInput.addEventListener('click', () =>{
+    fullnameInput.addEventListener('focus', () =>{
         if(fullnameInput.value === ""){
             fullNameLabel.classList.remove('toggle-label');
             fullNameLabel.classList.add('input-description');
@@ -52,7 +52,7 @@ function toggleLabel(){
         userNameLabel.classList.add('toggle-label');
     })
 
-    usernameInput.addEventListener("click", () =>{
+    usernameInput.addEventListener("focus", () =>{
         if(usernameInput.value === ""){
             userNameLabel.classList.remove('toggle-label');
             userNameLabel.classList.add('input-description');
@@ -77,9 +77,13 @@ function updateValidation(){
     const userName = document.getElementById('user-name');
 
     forms.addEventListener('submit', (e) =>{
-        if((name.value).match(/[0-9]/) || (name.value).match(/[\s]$/) || (name.value).match(/^[\s]/) || (name.value).match(/[\s]{2}/)){
+        if(!((name.value).match(/^[A-Za-záéíóúâêôãõçÁÉÍÓÚ ]+$/))){
             e.preventDefault();
-            alert("Nome inválido, tome cuidado com números ou espaços no lugar errado");
+            alert("Nome inválido");
+            name.focus();
+        } else if((name.value).match(/[\s]$/) || (name.value).match(/^[\s]/) || (name.value).match(/[\s]{2}/)){
+            e.preventDefault();
+            alert("Nome inválido, cuidado com espaços no lugar errado");
             name.focus();
         } else if((userName.value).match(/[\s]+/)){
             e.preventDefault();

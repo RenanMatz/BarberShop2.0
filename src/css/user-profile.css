@@ -156,6 +156,7 @@ body{
     top: 19px;
     color: #ccc;
     left: 15px;
+    user-select: none;
 }
 
 .input-line input{

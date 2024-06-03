@@ -32,19 +32,27 @@ function checkboxValidation(){
     forms.addEventListener('submit', (e) =>{
         const firstThree = (tel.value).slice(0, 3);
 
-        if((name.value).match(/[0-9]/) || (name.value).match(/[\s]$/) || (name.value).match(/^[\s]/) || (name.value).match(/[\s]{2}/)){
+        if(!((name.value).match(/^[A-Za-záéíóúâêôãõçÁÉÍÓÚ ]+$/))){
             e.preventDefault();
-            alert("Nome inválido, tome cuidado com números ou espaços no lugar errado");
+            alert("Nome inválido");
+            name.focus();
+        } else if((name.value).match(/[\s]$/) || (name.value).match(/^[\s]/) || (name.value).match(/[\s]{2}/)){
+            e.preventDefault();
+            alert("Nome inválido, cuidado com espaços no lugar errado");
             name.focus();
         } else if((userName.value).match(/[\s]+/)){
             e.preventDefault();
             alert('O nome de usuário não pode conter espaços');
             userName.focus();
-        } else if (!(tel.value).match(/^\d+$/)){
+        } else if(!(tel.value).match(/^\d+$/)){
             e.preventDefault();
             alert('Telefone inválido');
             tel.focus();
-        } else if(firstThree != '119'){
+        } else if(!((tel.value).match(/^[1-9][0-9][9]/))){
+            e.preventDefault();
+            alert('Telefone inválido');
+            tel.focus();
+        } else if((tel.value).match(/(\d)\1{3}/)){
             e.preventDefault();
             alert('Telefone inválido');
             tel.focus();

@@ -5,7 +5,7 @@ function toggleAnimation(){
     const userNameLabel = document.getElementById('user-name-label');
     const passwordLabel = document.getElementById('password-label');
 
-    userName.addEventListener("click", () =>{
+    userName.addEventListener("focus", () =>{
         userNameLabel.classList.remove('login-label-empty');
         userNameLabel.classList.add('login-label');
     })
@@ -17,7 +17,7 @@ function toggleAnimation(){
         }
     })
 
-    password.addEventListener("click", () =>{
+    password.addEventListener("focus", () =>{
         passwordLabel.classList.remove('login-label-empty');
         passwordLabel.classList.add('login-label');
     })

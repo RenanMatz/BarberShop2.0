@@ -1,6 +1,6 @@
 // BOTÃO DE MOSTRAR A SENHA
 function showPassword(){
-    const btnSeePassword = document.querySelector(".i");
+    const btnSeePassword = document.querySelector("#eye1");
     const passwordInput = document.querySelector("#new-password");  
 
     btnSeePassword.addEventListener("click", () =>{
@@ -16,8 +16,8 @@ function showPassword(){
     })
 
     // Segundo botão... antes de você me jugar eu tentei fazer com os dois botões e inputs ao mesmo tempo com "for of", mas não deu certo ent vamos desse jeito msm T_T
-    const btnSeePassword2 = document.querySelector("#i");
-    const passwordInput2 = document.querySelector("#confirmed-password");
+    const btnSeePassword2 = document.querySelector("#eye2");
+    const passwordInput2 = document.querySelector("#confirm-password");
 
     btnSeePassword2.addEventListener("click", () =>{
         if(passwordInput2.type === "password"){
@@ -37,9 +37,9 @@ showPassword();
 
 // VALIDAÇÃO DAS SENHAS
 function passwordValidation(){
-    const forms = document.querySelector('#redefine-password');
+    const forms = document.querySelector('.password-redefine-form');
     const newPassword = document.querySelector("#new-password");  
-    const confirmedPassword = document.querySelector("#confirmed-password");
+    const confirmedPassword = document.querySelector("#confirm-password");
     
     forms.addEventListener("submit", (e) =>{
         
@@ -60,3 +60,38 @@ function passwordValidation(){
 }
 
 passwordValidation();
+
+
+// Aplicar a animção nos campos de entrada
+function toggleAnimation(){
+    const newPassword = document.querySelector('#new-password');
+    const confirmedPassword = document.querySelector('#confirm-password');
+    const newPasswordLabel = document.querySelector('#new-password-label');
+    const confirmedPasswordLabel = document.querySelector('#confirmed-password-label');
+
+    newPassword.addEventListener("focus", () =>{
+        newPasswordLabel.classList.remove('label');
+        newPasswordLabel.classList.add('label-top');
+    })
+
+    newPassword.addEventListener("blur", () =>{
+        if(newPassword.value === ""){
+            newPasswordLabel.classList.remove('label-top');
+            newPasswordLabel.classList.add('label');
+        }
+    })
+
+    confirmedPassword.addEventListener("focus", () =>{
+        confirmedPasswordLabel.classList.remove('label');
+        confirmedPasswordLabel.classList.add('label-top');
+    })
+
+    confirmedPassword.addEventListener("blur", () =>{
+        if(confirmedPassword.value === ""){
+            confirmedPasswordLabel.classList.remove('label-top');
+            confirmedPasswordLabel.classList.add('label');
+        }
+    })
+}
+
+toggleAnimation();
